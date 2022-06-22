@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jaccard", "src\Jaccard\Jaccard.csproj", "{66A087CF-E87F-457F-8987-3E84BD59DA36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jaccard.Tests", "tests\Jaccard.Tests\Jaccard.Tests.csproj", "{7504D066-7220-4334-A50C-F344FC742371}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66A087CF-E87F-457F-8987-3E84BD59DA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66A087CF-E87F-457F-8987-3E84BD59DA36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66A087CF-E87F-457F-8987-3E84BD59DA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66A087CF-E87F-457F-8987-3E84BD59DA36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7504D066-7220-4334-A50C-F344FC742371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7504D066-7220-4334-A50C-F344FC742371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7504D066-7220-4334-A50C-F344FC742371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7504D066-7220-4334-A50C-F344FC742371}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
