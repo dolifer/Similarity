@@ -1,7 +1,8 @@
 using FluentAssertions;
+using Similarity.Core.Algorithms;
 using Xunit;
 
-namespace Jaccard.Tests;
+namespace Similarity.Tests.Jaccard;
 
 public class IndexCalculatorTests
 {

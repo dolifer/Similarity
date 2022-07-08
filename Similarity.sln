@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jaccard", "src\Jaccard\Jaccard.csproj", "{66A087CF-E87F-457F-8987-3E84BD59DA36}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Similarity.Core", "src\Similarity.Core\Similarity.Core.csproj", "{66A087CF-E87F-457F-8987-3E84BD59DA36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jaccard.Tests", "tests\Jaccard.Tests\Jaccard.Tests.csproj", "{7504D066-7220-4334-A50C-F344FC742371}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Similarity.Tests", "tests\Similarity.Tests\Similarity.Tests.csproj", "{7504D066-7220-4334-A50C-F344FC742371}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

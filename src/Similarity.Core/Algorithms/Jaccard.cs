@@ -1,9 +1,25 @@
-﻿namespace Jaccard;
+﻿using Similarity.Core.Helpers;
+
+namespace Similarity.Core.Algorithms;
+
+/// <summary>
+/// Calculates Jaccard Similarity between two collections. 
+/// </summary>
+/// More details at <a href="https://en.wikipedia.org/wiki/Jaccard_index">Wikipedia article about Jaccard index</a>
+public sealed class JaccardSimilarityCalculator : ISimilarityCalculator
+{
+    public double Calculate(string first, string second)
+    {
+        var left = first.ExtractShingles();
+        var right = second.ExtractShingles();
+
+        return JaccardIndexCalculator.GetIndex(left, right);
+    }
+}
 
 /// <summary>
 /// Calculates Jaccard Index/Similarity between two collections. 
 /// </summary>
-/// https://www.learndatasci.com/glossary/jaccard-similarity
 public static class JaccardIndexCalculator
 {
     /// <summary>
@@ -13,7 +29,7 @@ public static class JaccardIndexCalculator
     /// <param name="right">Second collection.</param>
     /// <returns>Value between 0 and 1, where 0 means given collections are identical and 1 that they are different.</returns>
     public static double GetDistance<T>(ICollection<T>? left, ICollection<T>? right) 
-        => 1 - GetIndex(left, right);
+        => Math.Round(1 - GetIndex(left, right), 2);
 
     /// <summary>
     /// Jaccard Index
